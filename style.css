@@ -1,0 +1,195 @@
+@font-face {
+    font-family: Cocogoose, sans-serif;
+    src: url("assest/Cocogoose.ttf");
+}
+
+html,
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.mobile-only {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 13%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 999999;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    filter: drop-shadow(0 0 16px rgba(64, 83, 252, 0.24));
+}
+
+.mobile-only .fas {
+    padding: 30px;
+    margin: auto;
+    font-size: 40px;
+}
+
+.desktop-only {
+    display: none;
+}
+
+.header-intro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    background: rgba(76, 175, 80, 0.1);
+    background-image: url(./images/bg-8.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 60%;
+    margin-bottom: 0;
+}
+
+.p-1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ec5242;
+    font-family: Cocogoose, sans-serif;
+    margin-left: 5%;
+    z-index: 9999;
+    padding: 20px;
+    margin-right: 5%;
+    text-align: left;
+    line-height: normal;
+}
+
+.p-2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #ec5242;
+    font-family: Cocogoose, sans-serif;
+    margin-left: 5%;
+    z-index: 9999;
+    padding: 2px;
+    margin-right: 5%;
+    text-align: left;
+    line-height: normal;
+    color: #000;
+    border: 2px solid #fff;
+}
+
+.h-1 {
+    font-size: 42px;
+    color: #ec5242;
+    font-family: Cocogoose, sans-serif;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+.h-3 {
+    font-size: 42px;
+    color: #ec5242;
+    font-family: Cocogoose, sans-serif;
+    margin-left: 5%;
+    margin-top: -10px;
+}
+
+.h-3-d {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    font-family: Cocogoose, sans-serif;
+    margin-left: 5%;
+}
+
+.p-3-a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    font-family: Cocogoose, sans-serif;
+    margin-left: 5%;
+    margin-bottom: 0;
+}
+
+.main-program {
+    background-image: url(images/31.png);
+    background-repeat: inherit;
+    background-position: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.m-program {
+    margin-top: -20px;
+}
+
+.m-program div {
+    display: flex;
+    font-family: 'Cocogoose', sans-serif;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: 100;
+    margin-top: 0;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.fa-podium {
+    padding: 30px;
+    margin: auto;
+    font-size: 40px;
+    color: green;
+    border: 1 solid #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 82%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 255, 255, 0.1);
+    border: 2px solid transparent;
+    font-family: 'Cocogoose', sans-serif;
+    ;
+}
+
+ul {
+    list-style: none;
+}
+
+.card .fas {
+    padding: 30px;
+    margin: auto;
+    font-size: 40px;
+}
+
+.item {
+    width: 20%;
+    height: 15%;
+}
+
+.a {
+    margin-right: 40%;
+}
+
+.b {
+    margin-left: -30%;
+}
+
+.c {
+    margin-left: 10%;
+    color: white;
+    width: 100%;
+}
