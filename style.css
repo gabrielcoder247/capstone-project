@@ -287,3 +287,14 @@ ul {
     border-radius: 2px;
     margin-bottom: 50px;
 }
+
+
+/* -----------------------------styling for the modal menu--------------------------- */
+
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ec5242;
+    min-height: 100vh;
+    width: 100%;
+}

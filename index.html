@@ -12,14 +12,24 @@
 </head>
 
 <body>
+    <div class="modal-container invisible">
+        <div class="top-bar">
+            <a class="a-logo"><i class="fas fa-times m-left hamburger" id="modal-harmburger"></i></a>
+        </div>
+        <nav class="menu-a">
+            <a class="menu-btn" href="#about-mobile">About</a>
+            <a class="menu-btn" href="#contact ">Contact</a>
+            <div class="bg-d"></div>
+        </nav>
+    </div>
     <header class="desktop-only">
         <div class="login-bar">
             <ul>
-                <li><a href=""><i class="fab fa-facebook-f"></i></a> </li>
-                <li><a href=""><i class="fab fa-twitter"></i></a> </li>
-                <li><a href="">English</a> </li>
-                <li><a href="">My page</a> </li>
-                <li><a href="">Logout</a> </li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a> </li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a> </li>
+                <li><a href="#">English</a> </li>
+                <li><a href="#">My page</a> </li>
+                <li><a href="#">Logout</a> </li>
             </ul>
         </div>
         <nav>
@@ -32,7 +42,7 @@
         </nav>
     </header>
     <header class="mobile-only">
-        <a><i class="fas fa-bars hamburger"></i></a>
+        <a><i class="fas fa-bars hamburger" id="menu-harmbuger"></i></a>
     </header>
     <main>
         <section class="header-intro">
@@ -187,7 +197,8 @@
             <button class="btn-mobile-only more" type="button">More</button>
         </section>
     </main>
-
+    <script src="./js/menu.js"></script>
+    <script src="./js/speaker.js"></script>
 </body>
 
 </html>
