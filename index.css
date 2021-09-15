@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Cocogoose, sans-serif;
+    font-family: 'Cocogoose', sans-serif;
     src: url("assest/Cocogoose.ttf");
 }
 
@@ -292,9 +292,29 @@ ul {
 /* -----------------------------styling for the modal menu--------------------------- */
 
 .modal-container {
-    display: flex;
+    display: none;
     flex-direction: column;
     background-color: #ec5242;
     min-height: 100vh;
     width: 100%;
+}
+
+.m-right {
+    font-size: 35px;
+    margin: auto;
+    padding: 10%;
+}
+
+.menu-a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.menu-a .menu-btn {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: none;
+    padding: 5%;
 }
