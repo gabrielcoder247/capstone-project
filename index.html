@@ -17,28 +17,32 @@
             <a class="a-logo"><i class="fas fa-times m-right hamburger" id="modal-harmburger"></i></a>
         </div>
         <nav class="menu-a">
-            <a class="menu-btn" href="#about-mobile">Home</a>
-            <a class="menu-btn" href="#contact ">About</a>
+            <a class="menu-btn" href="./index.html">Home</a>
+            <a class="menu-btn" href="./about.html">About</a>
             <div class="bg-d"></div>
         </nav>
     </div>
     <header class="desktop-only">
         <div class="login-bar">
-            <ul>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a> </li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a> </li>
-                <li><a href="#">English</a> </li>
-                <li><a href="#">My page</a> </li>
-                <li><a href="#">Logout</a> </li>
-            </ul>
+            <div class="menu-container">
+                <ul class="social">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a> </li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a> </li>
+                </ul>
+                <ul class="d-menu">
+                    <li class="d-m a"><a href="#">English</a> </li>
+                    <li class="d-m b"><a href="#">My page</a> </li>
+                    <li class="d-m c"><a href="#">Logout</a> </li>
+                </ul>
+            </div>
+
         </div>
-        <nav>
-            <div class="logo">
-
+        <nav class="desktop-menu">
+            <div class="d-m-container">
+                <a class="desktop-m tab-1" href="index.html">Home</a>
+                <a class="desktop-m tab-2" href="about.html">About</a>
             </div>
-            <div class="Menu">
 
-            </div>
         </nav>
     </header>
     <header class="mobile-only">
@@ -50,52 +54,49 @@
             <h1 class="h-1">Dubai Expo 2021</h1>
             <h3 class="h-3">Be part of the magic</h3>
 
-            <p class="p-2">The Expo 2020 TV gives you a glimpse into the exciting experiences you can enjoy at the World’s Greatest Show and is dedicated to our programmes, partners, attractions, pavilions, events, news and much more.</p>
+            <p class="p-2">The Expo 2020 TV gives you a glimpse into the exciting experiences <br> you can enjoy at the World’s Greatest Show and is dedicated <br> to our programmes, partners, attractions, pavilions, events, news and much more.</p>
             <h3 class="h-3-d">1 October 2021 – 31 March 2022</h3>
             <p class="p-3-a">@ Dubai, business bay, United Arab Emirate</p>
         </section>
         <section class="main-program">
+            <div class="h-main-0" id="main-0">
+                <h2>Main Program</h2>
+                <div class="line"></div>
+            </div>
             <div class="m-program">
-                <div class="h-main">
+                <div class="h-main" id="main-1">
                     <h2>Main Program</h2>
                     <div class="line"></div>
                 </div>
-                <ul class="card card-1">
+                <ul class="card card-1" id="card-a">
                     <li class="item a"><img class="speaker" src="images/speaker.png" alt="speaker"></li>
                     <li class="item b">Orientation</li>
                     <li class="item c">
                         <p>Listen to the teamleader from various countries make an opening presentation</p>
                     </li>
                 </ul>
-                <ul class="card card-1">
+                <ul class="card card-1" id="card-b">
                     <li class="item a"><img class="speaker" src="images/speaker.png" alt="speaker"></li>
                     <li class="item b">Orientation</li>
                     <li class="item c">
                         <p>Listen to the teamleader from various countries make an opening presentation</p>
                     </li>
                 </ul>
-                <ul class="card card-1">
+                <ul class="card card-1" id="card-c">
                     <li class="item a"><img class="speaker" src="images/speaker.png" alt="speaker"></li>
                     <li class="item b">Orientation</li>
                     <li class="item c">
                         <p>Listen to the teamleader from various countries make an opening presentation</p>
                     </li>
                 </ul>
-                <ul class="card card-1">
+                <ul class="card card-1" id="card-d">
                     <li class="item a"><img class="speaker" src="images/speaker.png" alt="speaker"></li>
                     <li class="item b">Orientation</li>
                     <li class="item c">
                         <p>Listen to the teamleader from various countries make an opening presentation</p>
                     </li>
                 </ul>
-                <ul class="card card-1">
-                    <li class="item a"><img class="speaker" src="images/speaker.png" alt="speaker"></li>
-                    <li class="item b">Orientation</li>
-                    <li class="item c">
-                        <p>Listen to the teamleader from various countries make an opening presentation</p>
-                    </li>
-                </ul>
-                <ul class="card card-1">
+                <ul class="card card-1" id="card-e">
                     <li class="item a"><img class="speaker" src="images/speaker.png" alt="speaker"></li>
                     <li class="item b">Orientation</li>
                     <li class="item c">
@@ -110,92 +111,127 @@
                 <h2>Featured speakers</h2>
                 <div class="line"></div>
             </div>
-            <div class="card-4-speaker">
-                <div class="s-portrait">
-                    <img class="f-photo" src="images/Maribel.png" alt="meribel">
-                    <img clas="b-portrait" id="b-portrait" src="images/portrait.png" alt="portrait">
-                </div>
-                <div class="details">
-                    <h3 class="detail-h-3">Lawrence Grace</h3>
-                    <h4 class="detail-h-4">USA</h4>
-                    <div class="detail-line"></div>
-                    <p class="detail-p-1">We are here to showcase our technology in military business and a better life for all</p>
+            <div class="speaker-grid">
+                <div class="card-4-speaker">
+                    <div class="s-portrait">
+                        <img class="f-photo" src="images/Maribel.png" alt="meribel">
+                        <img clas="b-portrait" id="b-portrait" src="images/portrait.png" alt="portrait">
+                    </div>
+                    <div class="details">
+                        <h3 class="detail-h-3">Lawrence Grace</h3>
+                        <h4 class="detail-h-4">USA</h4>
+                        <div class="detail-line"></div>
+                        <p class="detail-p-1">We are here to showcase our technology in military business and a better life for all</p>
+
+                    </div>
 
                 </div>
+                <div class="card-4-speaker">
+                    <div class="s-portrait">
+                        <img class="f-photo" src="images/Maribel.png" alt="meribel">
+                        <img clas="b-portrait" id="b-portrait" src="images/portrait.png" alt="portrait">
+                    </div>
+                    <div class="details">
+                        <h3 class="detail-h-3">Lawrence Grace</h3>
+                        <h4 class="detail-h-4">USA</h4>
+                        <div class="detail-line"></div>
+                        <p class="detail-p-1">We are here to showcase our technology in military business and a better life for all</p>
+
+                    </div>
+
+                </div>
+                <div class="card-4-speaker">
+                    <div class="s-portrait">
+                        <img class="f-photo" src="images/Maribel.png" alt="meribel">
+                        <img clas="b-portrait" id="b-portrait" src="images/portrait.png" alt="portrait">
+                    </div>
+                    <div class="details">
+                        <h3 class="detail-h-3">Lawrence Grace</h3>
+                        <h4 class="detail-h-4">USA</h4>
+                        <div class="detail-line"></div>
+                        <p class="detail-p-1">We are here to showcase our technology in military business and a better life for all</p>
+
+                    </div>
+
+                </div>
+                <div class="card-4-speaker">
+                    <div class="s-portrait">
+                        <img class="f-photo" src="images/Maribel.png" alt="meribel">
+                        <img clas="b-portrait" id="b-portrait" src="images/portrait.png" alt="portrait">
+                    </div>
+                    <div class="details">
+                        <h3 class="detail-h-3">Lawrence Grace</h3>
+                        <h4 class="detail-h-4">USA</h4>
+                        <div class="detail-line"></div>
+                        <p class="detail-p-1">We are here to showcase our technology in military business and a better life for all</p>
+
+                    </div>
+
+                </div>
+                <div class="card-4-speaker">
+                    <div class="s-portrait">
+                        <img class="f-photo" src="images/Maribel.png" alt="meribel">
+                        <img clas="b-portrait" id="b-portrait" src="images/portrait.png" alt="portrait">
+                    </div>
+                    <div class="details">
+                        <h3 class="detail-h-3">Lawrence Grace</h3>
+                        <h4 class="detail-h-4">USA</h4>
+                        <div class="detail-line"></div>
+                        <p class="detail-p-1">We are here to showcase our technology in military business and a better life for all</p>
+
+                    </div>
+
+                </div>
+                <div class="card-4-speaker">
+                    <div class="s-portrait">
+                        <img class="f-photo" src="images/Maribel.png" alt="meribel">
+                        <img clas="b-portrait" id="b-portrait" src="images/portrait.png" alt="portrait">
+                    </div>
+                    <div class="details">
+                        <h3 class="detail-h-3">Lawrence Grace</h3>
+                        <h4 class="detail-h-4">USA</h4>
+                        <div class="detail-line"></div>
+                        <p class="detail-p-1">We are here to showcase our technology in military business and a better life for all</p>
+
+                    </div>
+
+                </div>
+                <button class="btn-mobile-only more" type="button">More</button>
 
             </div>
-            <div class="card-4-speaker">
-                <div class="s-portrait">
-                    <img class="f-photo" src="images/Maribel.png" alt="meribel">
-                    <img clas="b-portrait" id="b-portrait" src="images/portrait.png" alt="portrait">
-                </div>
-                <div class="details">
-                    <h3 class="detail-h-3">Lawrence Grace</h3>
-                    <h4 class="detail-h-4">USA</h4>
-                    <div class="detail-line"></div>
-                    <p class="detail-p-1">We are here to showcase our technology in military business and a better life for all</p>
 
-                </div>
-
-            </div>
-            <div class="card-4-speaker">
-                <div class="s-portrait">
-                    <img class="f-photo" src="images/Maribel.png" alt="meribel">
-                    <img clas="b-portrait" id="b-portrait" src="images/portrait.png" alt="portrait">
-                </div>
-                <div class="details">
-                    <h3 class="detail-h-3">Lawrence Grace</h3>
-                    <h4 class="detail-h-4">USA</h4>
-                    <div class="detail-line"></div>
-                    <p class="detail-p-1">We are here to showcase our technology in military business and a better life for all</p>
-
-                </div>
-
-            </div>
-            <div class="card-4-speaker">
-                <div class="s-portrait">
-                    <img class="f-photo" src="images/Maribel.png" alt="meribel">
-                    <img clas="b-portrait" id="b-portrait" src="images/portrait.png" alt="portrait">
-                </div>
-                <div class="details">
-                    <h3 class="detail-h-3">Lawrence Grace</h3>
-                    <h4 class="detail-h-4">USA</h4>
-                    <div class="detail-line"></div>
-                    <p class="detail-p-1">We are here to showcase our technology in military business and a better life for all</p>
-
-                </div>
-
-            </div>
-            <div class="card-4-speaker">
-                <div class="s-portrait">
-                    <img class="f-photo" src="images/Maribel.png" alt="meribel">
-                    <img clas="b-portrait" id="b-portrait" src="images/portrait.png" alt="portrait">
-                </div>
-                <div class="details">
-                    <h3 class="detail-h-3">Lawrence Grace</h3>
-                    <h4 class="detail-h-4">USA</h4>
-                    <div class="detail-line"></div>
-                    <p class="detail-p-1">We are here to showcase our technology in military business and a better life for all</p>
-
-                </div>
-
-            </div>
-            <div class="card-4-speaker">
-                <div class="s-portrait">
-                    <img class="f-photo" src="images/Maribel.png" alt="meribel">
-                    <img clas="b-portrait" id="b-portrait" src="images/portrait.png" alt="portrait">
-                </div>
-                <div class="details">
-                    <h3 class="detail-h-3">Lawrence Grace</h3>
-                    <h4 class="detail-h-4">USA</h4>
-                    <div class="detail-line"></div>
-                    <p class="detail-p-1">We are here to showcase our technology in military business and a better life for all</p>
-
-                </div>
-
-            </div>
-            <button class="btn-mobile-only more" type="button">More</button>
         </section>
+        <section class="partner">
+            <div class="h-partner">
+                <h2 class="h-1-partner">Partners</h2>
+            </div>
+
+            <div class="grid flex-1">
+                <div class="img-partner">
+                    <img src="images/Ferrero.png" alt="ferrero">
+                </div>
+                <div class="img-partner">
+                    <img src="images/Lindt.png" alt="Lindt">
+                </div>
+
+
+                <div class="img-partner">
+                    <img src="images/R_cote.png" alt="cote">
+                </div>
+                <div class="img-partner">
+                    <img src="images/Valhorna.png" alt="Valhorna">
+                </div>
+
+            </div>
+
+        </section>
+        <footer>
+            <div class="contact">
+                <p class="contact-a">Dubai Expo 2021</p>
+                <p class="contact-b">Dubai expo <br> Some right reserved </p>
+
+            </div>
+        </footer>
     </main>
     <script src="./js/menu.js"></script>
     <script src="./js/speaker.js"></script>

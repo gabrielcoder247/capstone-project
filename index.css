@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Cocogoose', sans-serif;
-    src: url("assest/Cocogoose.ttf");
+    font-family: 'Lato', sans-serif;
+    src: url("assest/Lato.ttf");
 }
 
 html,
@@ -41,7 +41,7 @@ body {
     flex-direction: column;
     margin-top: 80px;
     background: rgba(76, 175, 80, 0.1);
-    background-image: url(./images/bg-8.jpg);
+    background-image: url('https://summit.cckorea.org/images/base/mobile_intro_bg.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -54,7 +54,7 @@ body {
     font-size: 20px;
     font-weight: bold;
     color: #ec5242;
-    font-family: Cocogoose, sans-serif;
+    font-family: 'Lato', sans-serif;
     margin-left: 5%;
     z-index: 9999;
     padding: 20px;
@@ -67,7 +67,7 @@ body {
     font-size: 16px;
     font-weight: normal;
     color: #ec5242;
-    font-family: Cocogoose, sans-serif;
+    font-family: 'Lato', sans-serif;
     margin-left: 5%;
     z-index: 9999;
     padding: 2px;
@@ -81,7 +81,7 @@ body {
 .h-1 {
     font-size: 42px;
     color: #ec5242;
-    font-family: Cocogoose, sans-serif;
+    font-family: 'Lato', sans-serif;
     margin-left: 5%;
     margin-bottom: 20px;
     margin-top: -10px;
@@ -90,7 +90,7 @@ body {
 .h-3 {
     font-size: 42px;
     color: #ec5242;
-    font-family: Cocogoose, sans-serif;
+    font-family: 'Lato', sans-serif;
     margin-left: 5%;
     margin-top: -10px;
 }
@@ -99,7 +99,7 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: #000;
-    font-family: Cocogoose, sans-serif;
+    font-family: 'Lato', sans-serif;
     margin-left: 5%;
 }
 
@@ -107,7 +107,7 @@ body {
     font-size: 18px;
     font-weight: bold;
     color: #000;
-    font-family: Cocogoose, sans-serif;
+    font-family: 'Lato', sans-serif;
     margin-left: 5%;
     margin-bottom: 0;
 }
@@ -126,7 +126,7 @@ body {
 
 .m-program .h-main {
     display: flex;
-    font-family: 'Cocogoose', sans-serif;
+    font-family: 'Lato', sans-serif;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -157,7 +157,7 @@ body {
     margin-right: auto;
     background-color: rgb(255, 255, 255, 0.1);
     border: 2px solid transparent;
-    font-family: 'Cocogoose', sans-serif;
+    font-family: 'Lato', sans-serif;
     ;
 }
 
@@ -193,7 +193,7 @@ ul {
 
 .featured-speakers .h-featured {
     display: flex;
-    font-family: 'Cocogoose', sans-serif;
+    font-family: 'Lato', sans-serif;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -239,8 +239,6 @@ ul {
     justify-content: center;
     align-items: center;
     margin-top: -30%;
-    /* width: 50%;
-    height: 50%; */
 }
 
 .details {
@@ -266,8 +264,56 @@ ul {
 
 .details .detail-line {
     width: 10%;
-    /* margin-left: 5px; */
     border-bottom: 1px solid #000;
+}
+
+.partner {
+    background-color: #424146;
+    padding-top: 1px;
+    height: 20%;
+    margin-bottom: 0;
+}
+
+.partner .h-partner {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin-left: 5%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.img-partner img {
+    width: 80%;
+    height: 10%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30% 30%;
+    height: 30%;
+    width: 100%;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-a {
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+}
+
+.m-program {
+    margin-top: -20px;
 }
 
 .more {
@@ -305,6 +351,10 @@ ul {
     padding: 10%;
 }
 
+#main-0 {
+    display: none;
+}
+
 .menu-a {
     display: flex;
     flex-direction: column;
@@ -317,4 +367,206 @@ ul {
     font-weight: 900;
     text-decoration: none;
     padding: 5%;
+}
+
+
+/* -----------------------------styling for the desktop version--------------------------- */
+
+@media screen and (min-width: 768px) {
+    .desktop-only {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        z-index: 9999;
+    }
+    .social {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 0;
+        color: #fff;
+    }
+    .login-bar {
+        display: flex;
+        width: 100%;
+        background-color: #403c3c;
+    }
+    .menu-container {
+        display: flex;
+        margin-left: 60%;
+        height: 10%;
+    }
+    .d-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        margin-left: -15px;
+    }
+    .fa-facebook-f {
+        margin-left: -100%;
+        color: #fff;
+    }
+    .fa-twitter {
+        color: #fff;
+    }
+    .d-menu .d-m a {
+        font-size: 16px;
+        font-family: 'Lato', sans-serif;
+        text-decoration: none;
+        margin-left: 10%;
+        padding: 4%;
+        color: #fff;
+        white-space: nowrap;
+    }
+    .mobile-only,
+    .modal-container {
+        display: none;
+    }
+    .desktop-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: #fff;
+        width: 100%;
+    }
+    .d-m-container {
+        width: 100%;
+        margin-left: 60%;
+        padding: 2%;
+    }
+    .desktop-m {
+        text-decoration: none;
+        margin-right: 10px;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        color: #000;
+        padding: 20px;
+        filter: drop-shadow(0 0 16px rgba(255, 255, 255, 0.24));
+    }
+    .desktop-m:hover {
+        color: #ec5242;
+    }
+    .header-intro {
+        margin-top: 6.56%;
+    }
+    .p-1 {
+        font-size: 24px;
+        font-family: 'Lato', sans-serif;
+        line-height: 0.8;
+        font-weight: normal;
+        margin-top: 10%;
+        text-align: left;
+    }
+    .p-2 {
+        font-size: 16px;
+        font-family: 'Lato', sans-serif;
+        line-height: 1.4;
+        font-weight: normal;
+        text-align: left;
+        width: 30%;
+    }
+    .h-1,
+    .h-3 {
+        font-size: 62px;
+        font-weight: bolder;
+        font-family: 'Lato', sans-serif;
+        text-align: left;
+        margin-left: 7%;
+        line-height: 0.80;
+    }
+    #main-1 {
+        display: none;
+    }
+    #main-0 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+    }
+    .main-program {
+        width: 100%;
+        height: 100%;
+    }
+    .m-program {
+        display: grid;
+        grid-template-columns: repeat(6, 19%);
+        grid-template-rows: 100%;
+        padding: 3%;
+        grid-gap: 0;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 10%;
+        height: 100%;
+        border: 0;
+    }
+    .item {
+        margin-top: 15px;
+        text-align: center;
+    }
+    .card .a {
+        margin-left: 20%;
+    }
+    .card .b {
+        margin-left: -45%;
+    }
+    .card .c {
+        margin-left: -30%;
+    }
+    .speaker-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin: auto 20%;
+        padding: 0;
+    }
+    .btn-mobile-only {
+        display: none;
+    }
+    .partner {
+        background-color: #424146;
+        padding-top: 1px;
+        height: 10%;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .partner .h-partner {
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        margin-left: 5%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .img-partner img {
+        width: 150px;
+        height: 100px;
+        margin: auto;
+    }
+    .img-partner {
+        margin: auto;
+    }
+    .flex-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 50%;
+        width: 80%;
+        padding-bottom: 3%;
+        margin-left: 8%;
+        align-items: center;
+    }
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
