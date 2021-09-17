@@ -15,20 +15,32 @@ body {
 .mobile-only {
     display: flex;
     justify-content: flex-start;
-    width: 100%;
-    height: 13%;
-    position: fixed;
+    width: 5%;
+    height: 10%;
     background-color: #fff;
-    z-index: 999999;
-    margin: 0;
-    padding: 0;
-    top: 0;
+    border: 0;
+}
+
+#show-more,
+#show-less {
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+    height: 18%;
+    background-color: #fff;
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-family: 'lato', sans-serif;
+    margin-left: 15%;
+    padding: 3%;
+    text-align: center;
+    border: 1px solid rgba(64, 83, 252, 0.24);
     filter: drop-shadow(0 0 16px rgba(64, 83, 252, 0.24));
 }
 
 .mobile-only .fas {
-    padding: 30px;
-    margin: auto;
+    padding: 10px;
+    margin: 0;
     font-size: 40px;
 }
 
@@ -39,7 +51,6 @@ body {
 .header-intro {
     display: flex;
     flex-direction: column;
-    margin-top: 80px;
     background: rgba(76, 175, 80, 0.1);
     background-image: url('https://summit.cckorea.org/images/base/mobile_intro_bg.png');
     background-repeat: no-repeat;
@@ -369,6 +380,10 @@ ul {
     padding: 5%;
 }
 
+#show-less {
+    display: none;
+}
+
 
 /* -----------------------------styling for the desktop version--------------------------- */
 
@@ -421,7 +436,8 @@ ul {
         color: #fff;
         white-space: nowrap;
     }
-    .mobile-only,
+    #show-more,
+    #show-less,
     .modal-container {
         display: none;
     }
@@ -451,6 +467,11 @@ ul {
     }
     .header-intro {
         margin-top: 6.56%;
+    }
+    .m-program .line,
+    .featured-speakers .line {
+        width: 5%;
+        border-bottom: 2px solid #ec5242;
     }
     .p-1 {
         font-size: 24px;
@@ -568,5 +589,8 @@ ul {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+    }
+    #speaker-less {
+        display: none;
     }
 }
