@@ -1,60 +1,58 @@
 const data = [{
-        id: 1,
-        name: 'Lawrence Grace',
-        image: 'images/Maribel.png',
-        bgImage: 'images/portrait.png',
-        country: 'USA',
-        description: 'We are here to showcase our technology in military business and a better life for all',
+  id: 1,
+  name: 'Lawrence Grace',
+  image: 'images/Maribel.png',
+  bgImage: 'images/portrait.png',
+  country: 'USA',
+  description: 'We are here to showcase our technology in military business and a better life for all',
 
+},
+{
+  id: 2,
+  name: 'Lawrence Grace',
+  image: 'images/Maribel.png',
+  bgImage: 'images/portrait.png',
+  country: 'USA',
+  description: 'We are here to showcase our technology in military business and a better life for all',
 
-    },
-    {
-        id: 2,
-        name: 'Lawrence Grace',
-        image: 'images/Maribel.png',
-        bgImage: 'images/portrait.png',
-        country: 'USA',
-        description: 'We are here to showcase our technology in military business and a better life for all',
+},
+{
+  id: 3,
+  name: 'Lawrence Grace',
+  image: 'images/Maribel.png',
+  bgImage: 'images/portrait.png',
+  country: 'USA',
+  description: 'We are here to showcase our technology in military business and a better life for all',
 
-    },
-    {
-        id: 3,
-        name: 'Lawrence Grace',
-        image: 'images/Maribel.png',
-        bgImage: 'images/portrait.png',
-        country: 'USA',
-        description: 'We are here to showcase our technology in military business and a better life for all',
+},
+{
+  id: 4,
+  name: 'Lawrence Grace',
+  image: 'images/Maribel.png',
+  bgImage: 'images/portrait.png',
+  country: 'USA',
+  description: 'We are here to showcase our technology in military business and a better life for all',
 
-    },
-    {
-        id: 4,
-        name: 'Lawrence Grace',
-        image: 'images/Maribel.png',
-        bgImage: 'images/portrait.png',
-        country: 'USA',
-        description: 'We are here to showcase our technology in military business and a better life for all',
+},
+{
+  id: 5,
+  name: 'Lawrence Grace',
+  image: 'images/Maribel.png',
+  bgImage: 'images/portrait.png',
+  country: 'USA',
+  description: 'We are here to showcase our technology in military business and a better life for all',
 
-    },
-    {
-        id: 5,
-        name: 'Lawrence Grace',
-        image: 'images/Maribel.png',
-        bgImage: 'images/portrait.png',
-        country: 'USA',
-        description: 'We are here to showcase our technology in military business and a better life for all',
+},
+{
+  id: 6,
+  name: 'Lawrence Grace',
+  image: 'images/Maribel.png',
+  bgImage: 'images/portrait.png',
+  country: 'USA',
+  description: 'We are here to showcase our technology in military business and a better life for all',
 
-    },
-    {
-        id: 6,
-        name: 'Lawrence Grace',
-        image: 'images/Maribel.png',
-        bgImage: 'images/portrait.png',
-        country: 'USA',
-        description: 'We are here to showcase our technology in military business and a better life for all',
-
-    },
+},
 ];
-
 
 const lessSpeaker = document.querySelector('#speaker-less');
 
@@ -63,10 +61,8 @@ let allHtml = '';
 const lessNum = 2;
 const allNum = data.length;
 
-
-
 for (let i = 0; i < lessNum; i += 1) {
-    lessHtml += `
+  lessHtml += `
     <div class="card-4-speaker">
     <div class="s-portrait">
         <img class="f-photo" src="${data[i].image}" alt="${data[i].name}">
@@ -85,13 +81,11 @@ for (let i = 0; i < lessNum; i += 1) {
 }
 lessSpeaker.innerHTML = lessHtml;
 
-
-
 const showAllSpeaker = document.querySelector('#speaker-all');
 // const allSpeaker = document.querySelector('#speaker-all div');
 
 for (let i = 0; i < allNum; i += 1) {
-    allHtml += `
+  allHtml += `
   <div class="card-4-speaker">
   <div class="s-portrait">
       <img class="f-photo" src="${data[i].image}" alt="${data[i].name}">
@@ -114,19 +108,19 @@ const showMore = document.querySelector('#show-more');
 const showLess = document.querySelector('#show-less');
 
 function showSpeakers() {
-    lessSpeaker.style.display = 'none';
-    showAllSpeaker.style.display = 'block';
-    showMore.style.display = 'none';
-    showLess.style.display = 'inline-block';
+  lessSpeaker.style.display = 'none';
+  showAllSpeaker.style.display = 'block';
+  showMore.style.display = 'none';
+  showLess.style.display = 'inline-block';
 }
 
 showMore.addEventListener('click', showSpeakers);
 
 function closeSpeakers() {
-    lessSpeaker.style.display = 'block';
-    showAllSpeaker.style.display = 'none';
-    showMore.style.display = 'inline-block';
-    showLess.style.display = 'none';
+  lessSpeaker.style.display = 'block';
+  showAllSpeaker.style.display = 'none';
+  showMore.style.display = 'inline-block';
+  showLess.style.display = 'none';
 }
 
 showLess.addEventListener('click', closeSpeakers);
