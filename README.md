@@ -19,6 +19,8 @@ Additional description about the project and its features.
 ### LIVE LINK
  click here to view this project [Live link](https://gabrielcoder247.github.io/)
 
+ ## Watch the video (https://www.loom.com/share/805a543ccd484918abc07f2449bac812)
+
 
 ## Getting Started
 ### Instructions on how to run my project locally on your machine
