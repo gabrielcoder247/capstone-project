@@ -211,7 +211,7 @@ ul {
   margin-right: auto;
   text-align: center;
   font-weight: 100;
-  margin-top: 0;
+  margin-bottom: 20px;
   margin-top: 20px;
   color: #000;
 }
@@ -494,10 +494,15 @@ ul {
     color: #ec5242;
   }
 
-  .m-program .line,
-  .featured-speakers .line {
-    width: 5%;
+  #main-0 .line {
+    width: 4%;
+    margin-top: 3.56%;
+    margin-left: -105px;
     border-bottom: 2px solid #ec5242;
+  }
+
+  #main-1 .line {
+    display: none;
   }
 
   .p-1 {
@@ -526,10 +531,6 @@ ul {
     text-align: left;
     margin-left: 7%;
     line-height: 0.8;
-  }
-
-  #main-1 {
-    display: none;
   }
 
   #main-0 {
@@ -657,8 +658,8 @@ ul {
 
   .d-m-container {
     width: 100%;
-    margin-left: 40%;
-    padding: 2%;
+    margin-left: 15%;
+    padding: 3%;
     white-space: nowrap;
   }
 
@@ -692,5 +693,10 @@ ul {
     font-family: 'Lato', sans-serif;
     margin-left: 5%;
     margin-bottom: 40px;
+  }
+
+  .h-featured .line {
+    width: 4%;
+    border-bottom: 2px solid #ec5242;
   }
 }
