@@ -17,14 +17,14 @@ Additional description about the project and its features.
 - Markdown
 
 ### LIVE LINK
- click here to view this project [Live link](https://gabrielcoder247.github.io/dubaiexpo/)
+ click here to view this project [Live link](https://gabrielcoder247.github.io/capstone-project/)
 
  ## Watch the video (https://www.loom.com/share/805a543ccd484918abc07f2449bac812)
 
 
 ## Getting Started
 ### Instructions on how to run my project locally on your machine
-1. Go  to my git repository [DUBAI EXPO](https://github.com/gabrielcoder247/dubaiexpo/tree/dynamic-js)
+1. Go  to my git repository [DUBAI EXPO](https://github.com/gabrielcoder247/capstone-project/tree/dynamic-js)
 2. then click on download zip folder
 3. open the folder on your local machine via code editor
 4. if you want to run the project, open it via the browser
