@@ -23,8 +23,6 @@ body {
 
 #show-more,
 #show-less {
-  display: flex;
-  justify-content: flex-start;
   width: 70%;
   height: 18%;
   background-color: #fff;
@@ -44,7 +42,8 @@ body {
   font-size: 40px;
 }
 
-.desktop-only {
+.desktop-only,
+#partner {
   display: none;
 }
 
@@ -231,7 +230,7 @@ ul {
   left: 8%;
   top: 70%;
   width: 25%;
-  height: 40%;
+  height: 35%;
 }
 
 #b-portrait {
@@ -240,7 +239,7 @@ ul {
   left: 3%;
   top: 60%;
   width: 25%;
-  height: 40%;
+  height: 35%;
 }
 
 .card-4-speaker {
@@ -276,38 +275,6 @@ ul {
   border-bottom: 1px solid #000;
 }
 
-.partner {
-  background-color: #424146;
-  padding-top: 1px;
-  height: 20%;
-  margin-bottom: 0;
-}
-
-.partner .h-partner {
-  font-size: 20px;
-  color: #fff;
-  font-weight: bold;
-  text-align: center;
-  font-family: 'Lato', sans-serif;
-  margin-left: 5%;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.img-partner img {
-  width: 80%;
-  height: 10%;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 30% 30%;
-  height: 30%;
-  width: 100%;
-  align-items: center;
-}
-
 .contact {
   display: flex;
   flex-direction: row;
@@ -337,6 +304,11 @@ ul {
   border: 2px solid lightslategray;
   border-radius: 2px;
   margin-bottom: 50px;
+}
+
+#show-less,
+.contact {
+  display: none;
 }
 
 .modal-container {
@@ -370,10 +342,6 @@ ul {
   font-weight: 900;
   text-decoration: none;
   padding: 5%;
-}
-
-#show-less {
-  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -598,11 +566,12 @@ ul {
     display: none;
   }
 
-  .partner {
+  #partner {
+    display: flex;
+    flex-direction: column;
     background-color: #424146;
     padding-top: 1px;
-    height: 10%;
-    width: 100%;
+    height: 20%;
     margin-bottom: 0;
   }
 
@@ -618,9 +587,17 @@ ul {
   }
 
   .img-partner img {
-    width: 150px;
-    height: 100px;
-    margin: auto;
+    width: 80%;
+    height: 10%;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30% 30%;
+    height: 30%;
+    width: 100%;
+    align-items: center;
   }
 
   .img-partner {
@@ -646,6 +623,33 @@ ul {
 
   #speaker-less {
     display: none;
+  }
+
+  .s-portrait {
+    display: block;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    margin: 0 0 20% 5%;
+    padding: 30%;
+  }
+
+  .f-photo {
+    position: absolute;
+    z-index: 2;
+    left: 8%;
+    top: 70%;
+    width: 25%;
+    height: 35%;
+  }
+
+  #b-portrait {
+    position: absolute;
+    z-index: 1;
+    left: 3%;
+    top: 60%;
+    width: 25%;
+    height: 35%;
   }
 }
 
