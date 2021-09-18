@@ -119,7 +119,7 @@ body {
   color: #000;
   font-family: 'Lato', sans-serif;
   margin-left: 5%;
-  margin-bottom: 0;
+  margin-bottom: 40px;
 }
 
 .main-program {
@@ -218,7 +218,7 @@ ul {
 
 .s-portrait {
   display: block;
-  width: 20%;
+  width: 50%;
   height: 50%;
   position: relative;
   margin: 0 0 20% 5%;
@@ -407,6 +407,19 @@ ul {
     height: 10%;
   }
 
+  .header-intro {
+    margin-top: 6.56%;
+  }
+
+  .p-3-a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    margin-left: 5%;
+    margin-bottom: 50px;
+  }
+
   .d-menu {
     display: flex;
     flex-direction: row;
@@ -443,33 +456,42 @@ ul {
   .desktop-menu {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     background-color: #fff;
     width: 100%;
   }
 
   .d-m-container {
     width: 100%;
-    margin-left: 60%;
-    padding: 2%;
+    margin-left: 10%;
+    padding: 2.255%;
+    white-space: nowrap;
+  }
+
+  .tab-5 {
+    border: 4px solid #ec5242;
+    color: #ec5242;
+  }
+
+  .logo {
+    width: 80px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 5.55px;
+    margin-left: 20px;
   }
 
   .desktop-m {
     text-decoration: none;
-    margin-right: 10px;
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     color: #000;
-    padding: 20px;
+    padding: 10px;
     filter: drop-shadow(0 0 16px rgba(255, 255, 255, 0.24));
   }
 
   .desktop-m:hover {
     color: #ec5242;
-  }
-
-  .header-intro {
-    margin-top: 6.56%;
   }
 
   .m-program .line,
@@ -524,10 +546,11 @@ ul {
 
   .m-program {
     display: grid;
-    grid-template-columns: repeat(6, 19%);
+    grid-template-columns: repeat(6, 18%);
     grid-template-rows: 100%;
-    padding: 3%;
+    padding: 4%;
     grid-gap: 0;
+    margin-left: 8%;
   }
 
   .card {
@@ -535,26 +558,29 @@ ul {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 10%;
-    height: 100%;
+    width: 80%;
+    height: 30vh;
     border: 0;
+    padding: 10px;
   }
 
   .item {
-    margin-top: 15px;
     text-align: center;
+    margin: 0;
   }
 
   .card .a {
-    margin-left: 20%;
+    margin: 10px 0 0 0;
   }
 
   .card .b {
-    margin-left: -45%;
+    margin: 0 0 0 -40px;
+    text-align: center;
   }
 
   .card .c {
-    margin-left: -30%;
+    margin: 0 0 0 0;
+    white-space: normal;
   }
 
   .speaker-grid {
@@ -617,5 +643,54 @@ ul {
 
   #speaker-less {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1059px) {
+  .desktop-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #fff;
+    width: 100%;
+  }
+
+  .d-m-container {
+    width: 100%;
+    margin-left: 40%;
+    padding: 2%;
+    white-space: nowrap;
+  }
+
+  .tab-5 {
+    border: 4px solid #ec5242;
+    color: #ec5242;
+  }
+
+  .logo {
+    width: 80px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 10.55%;
+    margin-left: 150px;
+  }
+
+  .desktop-m {
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #000;
+    padding: 20px;
+    filter: drop-shadow(0 0 16px rgba(255, 255, 255, 0.24));
+  }
+
+  .p-3-a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    margin-left: 5%;
+    margin-bottom: 40px;
   }
 }
