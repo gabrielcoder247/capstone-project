@@ -5,11 +5,165 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="index.css">
     <title>Dubai Expo 2021</title>
 </head>
 
 <body>
+    <div class="modal-container invisible">
+        <div class="top-bar">
+            <a class="a-logo"><i class="fas fa-times m-right hamburger" id="modal-harmburger"></i></a>
+        </div>
+        <nav class="menu-a">
+            <a class="menu-btn" href="./about.html">About</a>
+            <a class="menu-btn" href="#">Program</a>
+            <a class="menu-btn" href="#">Join</a>
+            <a class="menu-btn" href="#">Sponsor</a>
+            <a class="menu-btn" href="#">News</a>
 
+            <div class="bg-d"></div>
+        </nav>
+    </div>
+    <header class="desktop-only">
+        <div class="login-bar">
+            <div class="menu-container">
+                <ul class="social">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a> </li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a> </li>
+                </ul>
+                <ul class="d-menu">
+                    <li class="d-m a"><a href="#">English</a> </li>
+                    <li class="d-m b"><a href="#">My page</a> </li>
+                    <li class="d-m c"><a href="#">Logout</a> </li>
+                </ul>
+            </div>
+
+        </div>
+        <nav class="desktop-menu">
+            <a class="logo-container" href="./index.html">
+                <img class="logo" src="images/logo.jpg" alt="logo">
+            </a>
+            <div class="d-m-container">
+                <a class="desktop-m tab-0" href="about.html">About</a>
+                <a class="desktop-m tab-1" href="#">Program</a>
+                <a class="desktop-m tab-2" href="#">Join</a>
+                <a class="desktop-m tab-3" href="#">Sponsor</a>
+                <a class="desktop-m tab-4" href="#">News</a>
+                <a class="desktop-m tab-5" href="#">CC Campaign</a>
+            </div>
+
+        </nav>
+    </header>
+    <header class="mobile-only">
+        <a><i class="fas fa-bars hamburger" id="menu-harmbuger"></i></a>
+    </header>
+    <main>
+        <section class="header-intro">
+            <p class="p-1">When the world comes together, we create a better tomorrow</p>
+            <h1 class="h-1">Dubai Expo 2021</h1>
+            <h3 class="h-3">Be part of the magic</h3>
+
+            <p class="p-2">The Expo 2020 TV gives you a glimpse into the exciting experiences <br> you can enjoy at the World’s Greatest Show and is dedicated <br> to our programmes, partners, attractions, pavilions, events, news and much more.</p>
+            <h3 class="h-3-d">1 October 2021 – 31 March 2022</h3>
+            <p class="p-3-a">@ Dubai, business bay, United Arab Emirate</p>
+        </section>
+        <section class="main-program">
+            <div class="h-main-0" id="main-0">
+                <h2>Main Program</h2>
+                <div class="line"></div>
+            </div>
+            <div class="m-program">
+                <div class="h-main" id="main-1">
+                    <h2>Main Program</h2>
+                    <div class="line"></div>
+                </div>
+                <ul class="card card-1" id="card-a">
+                    <li class="item a"><img class="speaker" src="images/speaker.png" alt="speaker"></li>
+                    <li class="item b">Orientation</li>
+                    <li class="item c">
+                        <p>Listen to the teamleader from various countries make an opening presentation</p>
+                    </li>
+                </ul>
+                <ul class="card card-1" id="card-b">
+                    <li class="item a"><img class="speaker" src="images/speaker.png" alt="speaker"></li>
+                    <li class="item b">Orientation</li>
+                    <li class="item c">
+                        <p>Listen to the teamleader from various countries make an opening presentation</p>
+                    </li>
+                </ul>
+                <ul class="card card-1" id="card-c">
+                    <li class="item a"><img class="speaker" src="images/speaker.png" alt="speaker"></li>
+                    <li class="item b">Orientation</li>
+                    <li class="item c">
+                        <p>Listen to the teamleader from various countries make an opening presentation</p>
+                    </li>
+                </ul>
+                <ul class="card card-1" id="card-d">
+                    <li class="item a"><img class="speaker" src="images/speaker.png" alt="speaker"></li>
+                    <li class="item b">Orientation</li>
+                    <li class="item c">
+                        <p>Listen to the teamleader from various countries make an opening presentation</p>
+                    </li>
+                </ul>
+                <ul class="card card-1" id="card-e">
+                    <li class="item a"><img class="speaker" src="images/speaker.png" alt="speaker"></li>
+                    <li class="item b">Orientation</li>
+                    <li class="item c">
+                        <p>Listen to the teamleader from various countries make an opening presentation</p>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+        <section class="featured-speakers">
+            <div class="h-featured">
+                <h2>Featured speakers</h2>
+                <div class="line"></div>
+            </div>
+            <div class="speaker-grid" id="speaker-less">
+            </div>
+            <div class="speaker-grid" id="speaker-all"></div>
+            <button class="btn-mobile-only show-more" id="show-more" type="button">Show more</button>
+            <button class="btn-mobile-only show-less" id="show-less" type="button">Show less</button>
+
+        </section>
+        <section class="partner" id="partner">
+            <div class="h-partner">
+                <h2 class="h-1-partner">Partners</h2>
+                <div class="h-1-line"></div>
+            </div>
+
+            <div class="grid flex-1">
+                <div class="img-partner">
+                    <img src="images/Ferrero.png" alt="ferrero">
+                </div>
+                <div class="img-partner">
+                    <img src="images/Lindt.png" alt="Lindt">
+                </div>
+
+
+                <div class="img-partner">
+                    <img src="images/R_cote.png" alt="cote">
+                </div>
+                <div class="img-partner">
+                    <img src="images/Valhorna.png" alt="Valhorna">
+                </div>
+
+            </div>
+
+        </section>
+        <footer>
+            <div class="contact">
+                <p class="contact-a"><img class="footer-logo" src="images/logo.jpg" alt="footer log"> </p>
+                <p class="contact-b">DUBAI EXPO 2020. Copyright © 2021 created with love by <i>Gabriel aka Marshal</i> </p>
+
+            </div>
+        </footer>
+    </main>
+    <script src="./js/menu.js"></script>
+    <script src="./js/speaker.js"></script>
 </body>
 
 </html>
